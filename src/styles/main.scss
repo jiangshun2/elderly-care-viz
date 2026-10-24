@@ -1,0 +1,96 @@
+@use './variables.scss' as *;
+@use './grid.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial,
+    'Noto Sans SC', sans-serif;
+  font-size: 14px;
+  color: $text-1;
+  background: $bg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// —— 滚动条 ——
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(91, 104, 128, .22);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(91, 104, 128, .38);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+// —— 通用工具类 ——
+.u-flex { display: flex; }
+.u-between { display: flex; align-items: center; justify-content: space-between; }
+.u-center { display: flex; align-items: center; }
+.u-col { display: flex; flex-direction: column; }
+.u-gap-4 { gap: 4px; }
+.u-gap-8 { gap: 8px; }
+.u-gap-12 { gap: 12px; }
+.u-flex-1 { flex: 1; min-width: 0; }
+.u-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.u-num {
+  font-family: 'DIN Alternate', 'Bahnschrift', 'Helvetica Neue', Arial, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+// —— 页面骨架 ——
+.page {
+  padding: $gutter;
+  display: flex;
+  flex-direction: column;
+  gap: $gutter;
+  min-height: 100%;
+}
+
+.grid {
+  display: grid;
+  gap: $gutter;
+}
+
+// —— 页面进入动画 ——
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .22s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}

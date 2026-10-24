@@ -1,0 +1,65 @@
+// ============================================================
+//  全局设计变量（浅色主题）
+// ============================================================
+
+// —— 品牌色 ——
+$primary:        #3a6ff0;
+$primary-dark:   #2a56c4;
+$primary-soft:   #eaf0ff;
+$teal:           #12b0a4;
+$cyan:           #2fb6e0;
+$amber:          #f2a63b;
+$red:            #e5544b;
+$green:          #28a86b;
+$purple:         #7a5bf0;
+$pink:           #e86fa8;
+
+// —— 中性色 ——
+$bg:             #f1f4f9;
+$panel:          #ffffff;
+$panel-sub:      #f7f9fd;
+$border:         #e4e9f2;
+$border-soft:    #eef1f7;
+
+$text-1:         #17223a;   // 主标题
+$text-2:         #5b6880;   // 正文
+$text-3:         #96a2b6;   // 辅助
+
+$shadow-sm:      0 1px 2px rgba(23, 34, 58, .04);
+$shadow-md:      0 2px 12px rgba(23, 34, 58, .07);
+$shadow-lg:      0 8px 28px rgba(23, 34, 58, .10);
+
+$radius:         12px;
+$radius-sm:      8px;
+$gutter:         16px;
+
+:root {
+  --c-primary:      #{$primary};
+  --c-primary-dark: #{$primary-dark};
+  --c-primary-soft: #{$primary-soft};
+  --c-teal:         #{$teal};
+  --c-cyan:         #{$cyan};
+  --c-amber:        #{$amber};
+  --c-red:          #{$red};
+  --c-green:        #{$green};
+  --c-purple:       #{$purple};
+  --c-pink:         #{$pink};
+
+  --c-bg:           #{$bg};
+  --c-panel:        #{$panel};
+  --c-panel-sub:    #{$panel-sub};
+  --c-border:       #{$border};
+  --c-border-soft:  #{$border-soft};
+
+  --c-text-1:       #{$text-1};
+  --c-text-2:       #{$text-2};
+  --c-text-3:       #{$text-3};
+
+  --shadow-sm:      #{$shadow-sm};
+  --shadow-md:      #{$shadow-md};
+  --shadow-lg:      #{$shadow-lg};
+
+  --radius:         #{$radius};
+  --radius-sm:      #{$radius-sm};
+  --gutter:         #{$gutter};
+}

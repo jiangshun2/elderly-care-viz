@@ -1,0 +1,25 @@
+@use './variables.scss' as *;
+
+// 12 栅格布局
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: $gutter;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    grid-column: span #{$i};
+  }
+}
+
+@media (max-width: 1440px) {
+  .col-md-6 { grid-column: span 6; }
+  .col-md-4 { grid-column: span 4; }
+  .col-md-12 { grid-column: span 12; }
+}
+
+@media (max-width: 1024px) {
+  .col-sm-6 { grid-column: span 6; }
+  .col-sm-12 { grid-column: span 12; }
+}
