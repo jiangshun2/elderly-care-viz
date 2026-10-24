@@ -84,7 +84,7 @@ Mock 层是挂在 axios 上的自定义 adapter（`src/api/mock/index.js`），�
 
 ### 后端待实现接口清单
 
-完整清单见 [`src/api/endpoints.js`](src/api/endpoints.js)，共 5 个模块 34 个端点：
+完整清单见 [`src/api/endpoints.js`](src/api/endpoints.js)，共 6 个模块 33 个端点：
 
 | 模块 | 端点数 | 端点 |
 | --- | --- | --- |
